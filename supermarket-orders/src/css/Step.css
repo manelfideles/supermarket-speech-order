@@ -1,0 +1,24 @@
+.step {
+    margin-bottom: 4em;
+    margin-top: 10em;
+    display: grid;
+    justify-items: center;
+}
+
+.step h2 {
+    font-size: 35px;
+    width: 15%;
+    text-align: center;
+    margin-top: -3.5em;
+}
+
+.step p {
+    margin-top: 3em;
+    width: 20%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.step img {
+    width: 7.5%;
+}

@@ -1,0 +1,41 @@
+@import url('./variables.css');
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    color: var(--purple);
+}
+  
+nav li, nav a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+nav {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5em 4em 0 3em;
+}
+
+nav img {
+    width: 7rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul a {
+    display: block;
+    padding-left:3em;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--black);
+    transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: var(--purple);
+}
