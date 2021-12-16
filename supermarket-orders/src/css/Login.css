@@ -1,0 +1,48 @@
+.login {
+    display: grid;
+    justify-self: center;
+}
+
+.login h1 {
+    font-size: 3em;
+    margin-top: 3em;
+    display: grid;
+    justify-items: center;
+}
+
+.loginform {
+    display: inherit;
+    justify-items: center;
+    margin-bottom: 2em;
+}
+
+.login .loginform label {
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 2em 0 0.5em 0;
+}
+
+.login .loginform input[type=text] {
+    width: 30%;
+    height: 2.5em;
+    border: 5px solid var(--purple);
+    padding-left: 1em;
+    font-size: large;
+    font-weight: 600;
+}
+
+.login div {
+    display: grid;
+    justify-content: center;
+    padding-top: 3em;
+    font-size: larger;
+}
+
+.login span a {
+    padding-left: 0.3em;
+    font-size: large;
+    color: var(--purple);
+}
+
+
+
