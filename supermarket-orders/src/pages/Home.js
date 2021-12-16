@@ -5,7 +5,6 @@ import number2 from '../assets/2.svg';
 import number3 from '../assets/3.svg';
 import Step from '../components/Step';
 import MainButton from '../components/MainButton';
-import Footer from '../components/Footer';
 
 function Home() {
     return (
@@ -34,7 +33,6 @@ function Home() {
                     stepBodyText="Hit enter and... that's it. You're done! Enjoy your groceries :)"
                 />
             </section>
-            <Footer />
         </div>
     )
 }
