@@ -3,7 +3,7 @@ import '../css/MainButton.css';
 
 function MainButton(props) {
     return (
-        <button href={props.href}>{props.title}</button >
+        <a href={props.href} class="button">{props.title}</a>
     )
 }
 
