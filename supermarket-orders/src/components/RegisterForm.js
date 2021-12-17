@@ -2,18 +2,50 @@ import React from 'react'
 import '../css/RegisterForm.css';
 import SubmitButton from '../components/SubmitButton';
 
-function RegisterForm() {
-    return (
-        <div class='registercomp'>
-            <form class="registerform" action="" method="post">
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" />
-                <label for="password">Password</label>
-                <input type="text" id="password" name="password" />
-                <SubmitButton title='Sign-up' />
-            </form>
-        </div>
-    )
+class RegisterForm extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            email: '',
+            password: ''
+        };
+
+        this.handleInputChange = this.handleInputChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    validateForm() {
+        return this.email.length > 0 && this.password.length > 0;
+    }
+
+    handleInputChange(event) {
+        // set 'value' of property 'name'
+        this.setState({
+            [event.target.name]: event.target.value
+        });
+    }
+
+    handleSubmit(event) {
+        alert(`Credentials: ${this.state.email} ${this.state.password}`)
+        event.preventDefault();
+    }
+
+    render() {
+        return (
+            <div class='registercomp'>
+                {/* aqui e suposto mudar o tipo de req para get com <method='get'>*/}
+                <form class='registerform' onSubmit={this.handleSubmit}>
+                    <label>Email</label>
+                    <input type="text" name="email" value={this.state.email} onChange={this.handleInputChange} />
+
+                    <label>Password</label>
+                    <input type="password" name="password" value={this.state.password} onChange={this.handleInputChange} />
+                    <SubmitButton title='Sign-up' active_={!this.validateForm} />
+                </form>
+            </div>
+        )
+    }
 }
+
 
 export default RegisterForm;

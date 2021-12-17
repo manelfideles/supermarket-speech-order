@@ -10,7 +10,7 @@
     padding: 2em 0 0.5em 0;
 }
 
-.loginform input[type=text] {
+.loginform input[type=text], .loginform input[type=password] {
     width: 30%;
     height: 2.5em;
     border: 5px solid var(--purple);

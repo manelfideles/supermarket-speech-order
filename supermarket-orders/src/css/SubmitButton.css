@@ -19,3 +19,8 @@
 .submit:hover {
     background-color: var(--dark-purple);
 }
+
+.submit:disabled {
+    background-color: var(--grey);
+    color: black;
+}
