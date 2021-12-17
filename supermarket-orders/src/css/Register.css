@@ -1,23 +1,20 @@
-.login h1, .registerhere {
+.register h1, .loginhere {
     display: grid;
     justify-items: center;
 }
 
-.login h1 {
+.register h1 {
     font-size: 3em;
     margin-top: 3em;
 }
 
-.registerhere {
+.loginhere {
     padding-top: 3em;
     font-size: larger;
 }
 
-.registerhere span a {
+.loginhere span a {
     padding-left: 0.3em;
     font-size: large;
     color: var(--purple);
 }
-
-
-

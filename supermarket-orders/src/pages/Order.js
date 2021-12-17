@@ -1,17 +1,14 @@
-import React from 'react'
-import '../css/Order.css'
-import MainButton from '../components/MainButton';
+import React from 'react';
+import OrderForm from '../components/OrderForm';
+import '../css/Order.css';
 
 function Order() {
     return (
         <div class='order'>
-            <div>
+            <div class='header'>
                 <h1>Now you order! 👇</h1>
             </div>
-            <form action="" method="post">
-                <textarea name="order_text" placeholder='I want...' />
-            </form>
-            <MainButton href='/' title='Submit' />
+            <OrderForm />
         </div>
     )
 }

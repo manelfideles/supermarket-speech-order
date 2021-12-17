@@ -1,0 +1,22 @@
+.orderform {
+    padding: 1em;
+    padding-right: 4.25em;
+    width: 50%;
+}
+
+.orderform textarea {
+    resize: none;
+    border: 7px solid var(--purple);
+    width: 100%;
+    height: 10em;
+    
+    font-size: larger;
+    font-family: var(--main-font);
+    font-weight: 600;
+    padding: 1em 1em 0 1em;
+}
+
+.orderform textarea::placeholder {
+    color: var(--grey);
+    font-style: italic;
+}
