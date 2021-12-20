@@ -6,6 +6,8 @@ import Order from './pages/Order';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Footer from './components/Footer';
+import UserOrders from './pages/UserOrders';
+import OrderDetails from './pages/OrderDetails';
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
         <Route path='/order' element={<Order />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
+        <Route path='/user/orders' element={<UserOrders />} />
+        <Route path='/user/orders/:orderId' element={<OrderDetails />} />
       </Routes>
       <Footer />
     </Router>

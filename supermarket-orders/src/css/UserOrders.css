@@ -1,0 +1,6 @@
+.user_orders h1 {
+    font-size: 3em;
+    display: grid;
+    justify-content: center;
+    margin-top: 3em;
+}

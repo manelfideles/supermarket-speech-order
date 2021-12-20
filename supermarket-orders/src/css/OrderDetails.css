@@ -1,0 +1,87 @@
+.order-details {
+    display: grid;
+    justify-content: center;
+}
+
+.order-details h1, .order-details h1 p {
+    margin-top: 3em;
+    text-align: center;
+    justify-self: center;
+    font-size: 45px;
+}
+
+.order-details h1 p {
+    margin-top: 0.25em;
+    min-width: 15em;
+    text-align: center;
+}
+
+.details-frame {
+    display: flex;
+    border: 5px solid var(--grey);
+    padding: 2em;
+    font-size: 25px;
+    margin-bottom: 2em;
+}
+
+.left-content, .right-content {
+    margin: 0 1em;
+}
+
+.left-content {
+    width: 75%;
+    display: grid;
+    justify-content: left;
+    border-right: 2px solid var(--grey);
+    padding-right: 0;
+}
+
+.info {
+    display: flex;
+    padding: 0;
+}
+
+#info-left, .right-content span {
+    color: var(--purple);
+    text-decoration: underline;
+    width: 125%;
+}
+
+#info-right {
+    margin-left: 4em;
+    align-self: center;
+    width: 125%;
+    text-align: right;
+}
+
+#info-right span img {
+    margin-top: -0.5em;
+    display: grid;
+    padding-left: 2em;
+}
+
+.right-content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-content span {
+    text-align: center;
+}
+
+.right-content img {
+    /* border: 5px dotted blue; */
+    align-content: center;
+    margin: -4em 0 0 2em;
+    transition: all 0.3s ease-in-out;
+}
+
+.right-content img:hover {
+    cursor: pointer;
+    color: var(--purple);
+}
+
+
+
+
