@@ -6,7 +6,9 @@ import number3 from '../assets/3.svg';
 import Step from '../components/Step';
 import MainButton from '../components/MainButton';
 
+
 function Home() {
+    // window.location.reload(false);
     return (
         <div>
             <section class="hero">

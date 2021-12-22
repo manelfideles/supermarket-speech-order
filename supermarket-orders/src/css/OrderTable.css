@@ -7,7 +7,7 @@ table {
     text-align: center;
     border-collapse: separate;
     border-spacing: 0 1em;
-    width: 35em;
+    width: 50em;
     font-size: 25px;
 }
 
@@ -19,7 +19,7 @@ th {
 }
 
 td {
-    padding: 1.5em 1.5em;
+    padding: 1.5em 1em;
     font-size: 25px;
     border-top: 5px solid var(--grey);
     border-bottom: 5px solid var(--grey);

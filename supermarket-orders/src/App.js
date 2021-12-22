@@ -8,19 +8,22 @@ import Register from './pages/Register';
 import Footer from './components/Footer';
 import UserOrders from './pages/UserOrders';
 import OrderDetails from './pages/OrderDetails';
-
+import axios from 'axios';
 
 function App() {
+  // axios.defaults.baseURL = "<link do EB>";
+  axios.defaults.baseURL = "http://localhost:8000";
+  // axios.defaults.headers.get['Access-Control-Allow-Origin'] = '*'
+
   return (
     <Router>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/order' element={<Order />} />
+        <Route path='/order/:userId' element={<Order />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
-        <Route path='/user/orders' element={<UserOrders />} />
-        <Route path='/user/orders/:orderId' element={<OrderDetails />} />
+        <Route path='/user/:userId/orders' element={<UserOrders />} />
       </Routes>
       <Footer />
     </Router>

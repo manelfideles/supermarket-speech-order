@@ -1,6 +1,7 @@
 import React from 'react';
 import RegisterForm from '../components/RegisterForm';
-import '../css/Register.css'
+import '../css/Register.css';
+import axios from 'axios';
 
 
 function Register() {
