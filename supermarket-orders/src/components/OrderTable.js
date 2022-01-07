@@ -30,24 +30,26 @@ class OrderTable extends React.Component {
             { headers: { 'Authorization': localStorage.getItem('token') } }
         ).then((res) => {
             if (res.status == 200) {
-                this.setState({ orders: [...this.state.orders, res.data] });
+                this.setState({ orders: res.data });
+                //this.setState({ orders: res.data });
             }
         });
     }
 
     render() {
-        let table = this.state.orders.map((order, index) => {
-            let ord = order[Object.keys(order)]
+        let table = Object.entries(this.state.orders).map((order, index) => {
+            let key = order[0];
+            let value = order[1];
             return (
                 <tr key={index} data-item={order}>
-                    <td data-title='orderId' class='first'>{Object.keys(order)}</td>
-                    <td data-title='deliveryTime'>{ord['deliveryTime'].slice(0, 10)}</td>
-                    <td data-title='orderDate'>{ord['OrderDate'].slice(0, 10)}</td>
-                    <td data-title='description'><a href={ord['mp3Link']}>Listen</a></td>
-                    <td data-title='orderStatus' class='last'>{this.getStatusSVG(!ord['Status'])}</td>
+                    <td data-title='orderId' class='first'>{key}</td>
+                    <td data-title='orderDate'>{value['OrderDate'].slice(0, 10)}</td>
+                    <td data-title='deliveryTime'>{value['deliveryTime'].slice(0, 10)}</td>
+                    <td data-title='description'><a href={value['mp3Link']} target="_blank">Listen</a></td>
+                    <td data-title='orderStatus' class='last'>{this.getStatusSVG(!value['Status'])}</td>
                 </tr>
             );
-        });
+        })
         return (
             <div class='order_table'>
                 <table id='orders'>

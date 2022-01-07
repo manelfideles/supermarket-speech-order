@@ -7,11 +7,10 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Footer from './components/Footer';
 import UserOrders from './pages/UserOrders';
-import OrderDetails from './pages/OrderDetails';
 import axios from 'axios';
 
 function App() {
-  // axios.defaults.baseURL = "<link do EB>";
+  //axios.defaults.baseURL = "http://supermarketorders-env.eba-ecufeucs.us-east-1.elasticbeanstalk.com";
   axios.defaults.baseURL = "http://localhost:8000";
   // axios.defaults.headers.get['Access-Control-Allow-Origin'] = '*'
 

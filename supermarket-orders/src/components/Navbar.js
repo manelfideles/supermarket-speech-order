@@ -3,11 +3,6 @@ import { Link, Navigate } from 'react-router-dom';
 import '../css/Navbar.css';
 import logo from '../assets/logo.svg';
 
-/*
-localStorage.removeItem('token');
-return <Navigate to='/' />;
-*/
-
 
 function Navbar() {
     const [loggedIn, setLoggedIn] = useState(localStorage.getItem('token') != null);
@@ -16,8 +11,7 @@ function Navbar() {
         localStorage.removeItem('token');
         localStorage.removeItem('userId');
         setLoggedIn(false);
-        window.location.reload(false);
-        <Navigate to='/' />
+        <Navigate to='/' />;
     }
 
     function getRoute(path) {
